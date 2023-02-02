@@ -1,17 +1,23 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from "react";
 
-import App from './App'
+import ReactDOM from "react-dom";
+import { Provider } from "react-redux";
+import { HashRouter } from "react-router-dom";
 
-import './styles/index.css'
+import "./styles/index.css";
 
-const rootView = document.getElementById('root')
+import { App } from "App";
+import { store } from "store";
+
+const rootView = document.getElementById("root");
 
 if (rootView) {
   ReactDOM.render(
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>,
+    <Provider store={store}>
+      <HashRouter>
+        <App />
+      </HashRouter>
+    </Provider>,
     rootView
-  )
+  );
 }

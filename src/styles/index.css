@@ -12,6 +12,10 @@ code {
     monospace;
 }
 
+button{
+  cursor: pointer;
+}
+
 .App {
   text-align: center;
 }
@@ -29,7 +33,6 @@ code {
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,6 +43,49 @@ code {
 
 .App-link {
   color: #61dafb;
+}
+
+.active-size{
+  background-color: #d30909;
+  color: white;
+  border: none;
+}
+
+.main{
+  background-color: #cdcdd5;
+  min-height: calc(100vh - 95px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.images-list{
+  margin: 50px;
+}
+
+.card{
+  max-width: 320px;
+  width: 100%;
+  border: 1px solid #282c34;
+  border-radius: 5px;
+}
+
+.card__img{
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.card__next-prev-btn{
+  cursor: pointer;
+  height: 30px;
+}
+
+.card__btn-list{
+  display: flex;
+  justify-content: space-between;
+  max-width: 200px;
+  margin: 0 auto;
 }
 
 @keyframes App-logo-spin {
