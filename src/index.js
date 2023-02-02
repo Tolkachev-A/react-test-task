@@ -2,7 +2,7 @@ import React from "react";
 
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter, HashRouter } from "react-router-dom";
 
 import "./styles/index.css";
 
@@ -14,9 +14,9 @@ const rootView = document.getElementById("root");
 if (rootView) {
   ReactDOM.render(
     <Provider store={store}>
-      <HashRouter>
+      <BrowserRouter>
         <App />
-      </HashRouter>
+      </BrowserRouter>
     </Provider>,
     rootView
   );
